@@ -16,4 +16,4 @@ def home(request, pk=None):
 
 def main(request):
     name = 'Roman'
-    return render(request, 'home.html', {'name': name})
+    return render(request, 'index.html', {'name': name})
