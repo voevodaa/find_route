@@ -20,7 +20,8 @@ import cities.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', cities.views.home, name='cities/home/'),
+    path('cities/home/', cities.views.home, name='cities/home/'),
     path('cities/<int:pk>/', cities.views.home),
+    path('main', cities.views.main, name='main'),
 
 ]

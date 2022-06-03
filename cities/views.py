@@ -12,3 +12,8 @@ def home(request, pk=None):
         queue_set = City.objects.all()
         context = {'object_list': queue_set}
         return render(request, 'cities/home.html', context)
+
+
+def main(request):
+    name = 'Roman'
+    return render(request, 'home.html', {'name': name})
