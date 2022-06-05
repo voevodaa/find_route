@@ -21,7 +21,7 @@ import cities.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cities/home/', cities.views.home, name='cities/home/'),
-    path('cities/<int:pk>/', cities.views.home),
+    path('cities/detail/<int:pk>/', cities.views.CityDetailView.as_view(), name='detail'),
     path('', cities.views.main, name='main'),
 
 ]
