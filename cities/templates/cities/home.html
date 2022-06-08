@@ -11,9 +11,8 @@
         {% endfor %}
     </div>
 </div>
-<form action="https://www.google.com/search">
-  <label for="fname">Город</label><br>
-  <input type="text" id="fname" name="q"><br>
+<form action="" method="post"> {% csrf_token %}
+    {{form.as_p}}
   <input type="submit" value="Submit">
 </form>
 {% endblock %}
