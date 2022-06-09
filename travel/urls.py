@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cities/home/', cities.views.home, name='cities/home/'),
     path('cities/detail/<int:pk>/', cities.views.CityDetailView.as_view(), name='detail'),
+    path('cities/add/', cities.views.CityCreateView.as_view(), name='create'),
     path('', cities.views.main, name='main'),
 
 ]
